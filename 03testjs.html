@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03testjs.html</title>
+    <style>
+        * {
+            font-size: 20pt;
+        }
+    </style>
+    <script>
+
+        function myHap() {
+        
+        var kor=0, eng=0, hap=0, avg=0; //변수선언및초기화
+
+        kor = 90;
+        eng = 85;
+        hap = kor + eng;
+        avg = hap / 2;
+
+        console.log('콘솔 총점=',hap); //F12검사 console탭
+        console.log('콘솔 평균=',avg);
+        document.write('총점=',hap,'<br>');
+        document.write('평균=',avg);
+        }
+</script>
+</head>
+<body>
+    <h2>03testjs.html</h2>
+    <img src="./images/a1.png" width="200" height="100">
+    <img src="./images/a1.png" width="200" height="100">
+    <img src="./images/a1.png" width="200" height="100">
+
+    <button onclick="javascript:myHap();">버튼myHap함수호출</button>
+    <div id="display">
+
+    </div>
+    
+</body>
+</html>

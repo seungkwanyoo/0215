@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06testjs.html</title>
+
+</head>
+<script>
+    function myemp() {
+        var nick = '', age =0, city =''; //변수공간할당 초기화
+        var data = '안내문' ;
+
+    
+        nick = 'coffeebene';
+        age = 35;
+        city = 'bucheon';
+        data = '<h3>이름:' + nick + ' 나이:' +age+ ' 주소:' + city+'</h3>';
+        document.getElementById('display').innerHTML = data ;
+
+        //첫번째 변수 3개선언 nick coffeebene,age 35,city부천
+        //화면출력
+        
+    }//end
+
+    function mystar() {
+        var info = '';
+        star1 = '🏆<br>';
+        star2 = '🏆🏆<br>';
+        star3 = '🏆🏆🏆<br>';
+        star4 = '🏆🏆🏆🏆<br>';
+        star5 = '🏆🏆🏆🏆🏆<br>';
+        info = star1+star2+star3+star4+star5;
+        document.getElementById('display').innerHTML = info ;
+    }
+
+    function mytree() {
+        var flower='🎃<br>🎃🎃<br>🎃🎃🎃<br>🎃🎃🎃🎃<br>🎃🎃🎃🎃🎃';
+        document.getElementById('last').innerHTML = flower ;
+    }
+
+    function mynumber(){
+        var su = 0, su1 = 1, su2 = 2, su3 = 3, su4 = 4, su5 = 5;
+        su1 = su + 1;
+        su2 = su1 +1;
+        su3 = su2 +1;
+        su4 = su3 +1;
+        su5 = su4 +1;
+        document.getElementById('best').innerHTML = su +''+ su1 + su2 + su3 +su4 + su5 ;
+           
+    }
+</script>
+<body>
+    
+    <h2>06testjs.html</h2>
+    <img src="./images/cake1.jpg" width="200" height="70">
+    <img src="./images/cake1.jpg" width="200" height="70">
+    <img src="./images/cake1.jpg" width="200" height="70"><p></p>
+    <button onclick="myemp()">내정보emp</button>
+    <button onclick="mystar()">스타출력</button>
+    <button onclick="mytree()">tree출력</button>
+    <button onclick="mynumber()">숫자출력</button>
+    <div id="display"> </div>
+    <div id="last"> </div>
+    <div id="best"> </div>
+
+</body>
+</html>
